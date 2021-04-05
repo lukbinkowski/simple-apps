@@ -1,8 +1,8 @@
 /*
-* Class to store JSON from https://cat-fact.herokuapp.com/facts/random
-* Generated in jsonschema2pojo
-*
-*/
+ * Class to store JSON from https://cat-fact.herokuapp.com/facts/random
+ * Generated in jsonschema2pojo
+ *
+ */
 package src;
 
 import com.google.gson.annotations.Expose;
@@ -110,4 +110,18 @@ public class CatFact {
         this.v = v;
     }
 
+    @Override
+    public String toString() {
+        return "CatFact {" +
+                "\nstatus=" + status +
+                "\n, type='" + type + '\'' +
+                "\n, deleted=" + deleted +
+                "\n, id='" + id + '\'' +
+                "\n, user='" + user + '\'' +
+                "\n, text='" + text + '\'' +
+                "\n, createdAt='" + createdAt + '\'' +
+                "\n, updatedAt='" + updatedAt + '\'' +
+                "\n, v=" + v + "\n" +
+                '}';
+    }
 }
